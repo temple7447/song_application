@@ -1,14 +1,15 @@
+{% load static %}
 <DOCTYPE html>
     <html>
         <head>
             <title>
                 HOME PAGE
             </title>
-
+           
+<link rel="stylesheet" href="{%static '/css/main.css' %}">
         </head>
         <body>
-            <div>Nav </div>
-           <hr>
+            {% include 'songs/Nav.html' %}
             {% block songs %}
             
             
